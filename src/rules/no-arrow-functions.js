@@ -3,13 +3,18 @@
 module.exports = {
   meta: {
     docs: {
-      description: ''
+      description: 'deny arrow-functions'
     },
     schema: []
   },
   create(context) {
     return {
-      
+      ArrowFunctionExpression(node) {
+        context.report({
+          node,
+          message: 'Unexpected arrow-function expression.'
+        });
+      }
     };
   }
 };

@@ -3,10 +3,14 @@
 const fs = require('fs');
 const path = require('path');
 const { RuleTester } = require('eslint');
-const plugin = require('../index');
+const plugin = require('../src/index');
 
 Object.keys(plugin.rules).forEach((ruleName) => {
-  const tester = new RuleTester();
+  const tester = new RuleTester({
+    parserOptions: {
+      ecmaVersion: 2016
+    }
+  });
 
-  tester.run(`es5/${ruleName}`, plugin[ruleName], require(`./rules/${ruleName}`));
+  tester.run(`es5/${ruleName}`, plugin.rules[ruleName], require(`./rules/${ruleName}`));
 });

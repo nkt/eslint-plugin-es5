@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-es5",
   "version": "0.0.0",
-  "main": "index.js",
+  "main": "src/index.js",
   "author": "Nikita Gusakov <gusnkt@gmail.com>",
   "license": "MIT",
   "scripts": {
@@ -10,5 +10,8 @@
   "devDependencies": {
     "eslint": "^3.12.2",
     "mocha": "^3.2.0"
+  },
+  "peerDependencies": {
+    "eslint": ">= 3.0.0"
   }
 }
