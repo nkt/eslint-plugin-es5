@@ -3,7 +3,6 @@
 module.exports = {
   rules: {
     'no-arrow-functions': require('./rules/no-arrow-functions'),
-    'no-block-scoped-functions': require('./rules/no-block-scoped-functions'),
     'no-block-scoping': require('./rules/no-block-scoping'),
     'no-classes': require('./rules/no-classes'),
     'no-computed-properties': require('./rules/no-computed-properties'),
@@ -11,7 +10,6 @@ module.exports = {
     'no-destructuring': require('./rules/no-destructuring'),
     'no-duplicate-keys': require('./rules/no-duplicate-keys'),
     'no-for-of': require('./rules/no-for-of'),
-    'no-function-name': require('./rules/no-function-name'),
     'no-literals': require('./rules/no-literals'),
     'no-object-super': require('./rules/no-object-super'),
     'no-parameters': require('./rules/no-parameters'),
