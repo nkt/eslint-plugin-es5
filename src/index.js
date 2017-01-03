@@ -21,6 +21,14 @@ module.exports = {
         'es5/no-typeof-symbol': 2,
         'es5/no-unicode-regex': 2
       }
+    },
+    'no-es2016': {
+      plugins: [
+        'es5'
+      ],
+      rules: {
+        'es5/exponentiation-operator': 2,
+      }
     }
   },
   rules: {
@@ -30,6 +38,7 @@ module.exports = {
     'no-computed-properties': require('./rules/no-computed-properties'),
     'no-default-parameters': require('./rules/no-default-parameters'),
     'no-destructuring': require('./rules/no-destructuring'),
+    'no-exponentiation-operator': require('./rules/no-exponentiation-operator'),
     'no-for-of': require('./rules/no-for-of'),
     'no-object-super': require('./rules/no-object-super'),
     'no-shorthand-properties': require('./rules/no-shorthand-properties'),

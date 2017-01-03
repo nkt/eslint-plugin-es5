@@ -23,7 +23,7 @@
     "url": "git+https://github.com/nkt/eslint-plugin-es5.git"
   },
   "scripts": {
-    "pretest": "eslint src/ test/",
+    "pretest": "eslint src/ tests/",
     "test": "mocha ./tests/index.js",
     "preversion": "npm test",
     "postversion": "npm publish",
