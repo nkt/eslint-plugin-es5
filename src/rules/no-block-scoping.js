@@ -3,7 +3,7 @@
 module.exports = {
   meta: {
     docs: {
-      description: 'deny block-scoping'
+      description: 'Forbid block-scoping'
     },
     schema: [{
       type: 'object',

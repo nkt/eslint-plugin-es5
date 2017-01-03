@@ -3,7 +3,7 @@
 module.exports = {
   meta: {
     docs: {
-      description: 'deny for-of statement'
+      description: 'Forbid for-of statement'
     },
     schema: []
   },

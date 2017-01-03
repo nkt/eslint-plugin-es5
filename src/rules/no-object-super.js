@@ -3,7 +3,7 @@
 module.exports = {
   meta: {
     docs: {
-      description: 'deny call super()'
+      description: 'Forbid call super()'
     },
     schema: []
   },

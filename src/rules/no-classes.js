@@ -3,7 +3,7 @@
 module.exports = {
   meta: {
     docs: {
-      description: 'deny classes'
+      description: 'Forbid classes'
     },
     schema: []
   },

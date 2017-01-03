@@ -3,7 +3,7 @@
 module.exports = {
   meta: {
     docs: {
-      description: 'deny arrow-functions'
+      description: 'Forbid arrow-functions'
     },
     schema: []
   },
