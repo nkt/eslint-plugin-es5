@@ -39,7 +39,7 @@ List of supported rules
   - `es5/no-spread`: ~
   - `es5/no-sticky-regex`: ~
   - `es5/no-template-literals`: ~
-  - `es5/no-typeof-symbol`: ~
+  - `es5/no-typeof-symbol`: Forbid `typeof foo === 'symbol'` [checks](https://babeljs.io/learn-es2015/#ecmascript-2015-features-symbols).
   - `es5/no-unicode-regex`: Forbid [Unicode support](https://babeljs.io/learn-es2015/#ecmascript-2015-features-unicode) in RegExp.
 
 License
