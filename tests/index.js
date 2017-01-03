@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const { RuleTester } = require('eslint');
+const RuleTester = require('eslint').RuleTester;
 const plugin = require('../src/index');
 
 Object.keys(plugin.rules).forEach((ruleName) => {
