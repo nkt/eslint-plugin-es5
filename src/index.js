@@ -6,7 +6,6 @@ module.exports = {
     'no-block-scoping': require('./rules/no-block-scoping'),
     'no-classes': require('./rules/no-classes'),
     'no-computed-properties': require('./rules/no-computed-properties'),
-    'no-constants': require('./rules/no-constants'),
     'no-destructuring': require('./rules/no-destructuring'),
     'no-duplicate-keys': require('./rules/no-duplicate-keys'),
     'no-for-of': require('./rules/no-for-of'),
