@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-es5",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "ESLint plugin deny ES2015",
   "keywords": [
     "eslint",
