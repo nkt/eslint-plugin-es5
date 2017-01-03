@@ -3,13 +3,20 @@
 module.exports = {
   meta: {
     docs: {
-      description: ''
+      description: 'Forbid computed properties.'
     },
     schema: []
   },
   create(context) {
     return {
-      
+      Property(node) {
+        if (node.computed) {
+          context.report({
+            node,
+            message: 'Unexpected computed property.'
+          });
+        }
+      }
     };
   }
 };
