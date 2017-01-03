@@ -1,9 +1,21 @@
 {
   "name": "eslint-plugin-es5",
   "version": "0.1.0",
-  "main": "src/index.js",
+  "description": "ESLint plugin deny ES2016",
   "author": "Nikita Gusakov <gusnkt@gmail.com>",
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
   "license": "MIT",
+  "homepage": "https://github.com/nkt/eslint-plugin-es5#readme",
+  "bugs": {
+    "url": "https://github.com/nkt/eslint-plugin-es5/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nkt/eslint-plugin-es5.git"
+  },
   "scripts": {
     "test": "mocha ./tests/index.js"
   },
