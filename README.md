@@ -24,8 +24,20 @@ Add into your `.eslintrc`:
 }
 ```
 
+You can read more about other rules bellow.
+
+Also you can extend one of presets:
+```json
+{
+  "extends": [
+    "eslint:recommended",
+    "es5:no-es2015"
+  ]
+}
+```
+
 List of supported rules
------
+-----------------------
 
   - `es5/no-arrow-functions`: Forbid [arrow-functions](https://babeljs.io/learn-es2015/#ecmascript-2015-features-arrows-and-lexical-this).
   - `es5/no-block-scoping`: Forbid `let` and `const` declarations. You can enable them using options: `"es5/no-block-scoping": ["error", { "let": true }]`
