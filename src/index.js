@@ -12,7 +12,6 @@ module.exports = {
     'no-parameters': require('./rules/no-parameters'),
     'no-shorthand-properties': require('./rules/no-shorthand-properties'),
     'no-spread': require('./rules/no-spread'),
-    'no-sticky-regex': require('./rules/no-sticky-regex'),
     'no-template-literals': require('./rules/no-template-literals'),
     'no-typeof-symbol': require('./rules/no-typeof-symbol'),
     'no-unicode-regex': require('./rules/no-unicode-regex')
