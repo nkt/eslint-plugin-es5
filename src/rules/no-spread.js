@@ -3,13 +3,18 @@
 module.exports = {
   meta: {
     docs: {
-      description: ''
+      description: 'Forbid spread expressions'
     },
     schema: []
   },
   create(context) {
     return {
-      
+      SpreadElement(node) {
+        context.report({
+          node,
+          message: 'Unexpected spread expression.'
+        });
+      }
     };
   }
 };
