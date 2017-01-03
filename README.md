@@ -1,7 +1,7 @@
 eslint-plugin-es5
 =================
 
-ESLint plugin deny ES2016
+ESLint plugin deny ES2015
 
 Installation
 ------------

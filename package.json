@@ -1,13 +1,19 @@
 {
   "name": "eslint-plugin-es5",
   "version": "0.1.1",
-  "description": "ESLint plugin deny ES2016",
+  "description": "ESLint plugin deny ES2015",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "es5",
+    "es2015"
+  ],
   "author": "Nikita Gusakov <gusnkt@gmail.com>",
+  "license": "MIT",
   "main": "src/index.js",
   "files": [
     "src"
   ],
-  "license": "MIT",
   "homepage": "https://github.com/nkt/eslint-plugin-es5#readme",
   "bugs": {
     "url": "https://github.com/nkt/eslint-plugin-es5/issues"
