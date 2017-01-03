@@ -22,7 +22,7 @@ module.exports = {
         'es5/no-unicode-regex': 2
       }
     }
-  }
+  },
   rules: {
     'no-arrow-functions': require('./rules/no-arrow-functions'),
     'no-block-scoping': require('./rules/no-block-scoping'),

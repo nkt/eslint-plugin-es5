@@ -8,7 +8,7 @@ const plugin = require('../src/index');
 Object.keys(plugin.rules).forEach((ruleName) => {
   const tester = new RuleTester({
     parserOptions: {
-      ecmaVersion: 2016
+      ecmaVersion: 2015
     }
   });
 
