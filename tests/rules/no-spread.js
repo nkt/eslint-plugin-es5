@@ -9,6 +9,7 @@ module.exports = {
   ],
   invalid: [
     { code: 'foo(...args)', errors: [{ message: 'Unexpected spread expression.' }] },
+    { code: 'foo(a, b, c, ...args)', errors: [{ message: 'Unexpected spread expression.' }] },
     { code: '[...args]', errors: [{ message: 'Unexpected spread expression.' }] },
     { code: '[1, ...[2], 3]', errors: [{ message: 'Unexpected spread expression.' }] }
   ]

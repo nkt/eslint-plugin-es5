@@ -32,9 +32,9 @@ List of supported rules
   - `es5/no-classes`: Forbid [ES2015 classes](https://babeljs.io/learn-es2015/#ecmascript-2015-features-classes).
   - `es5/no-computed-properties`: Forbid [computed properties](https://babeljs.io/learn-es2015/#ecmascript-2015-features-enhanced-object-literals).
   - `es5/no-destructuring`: Forbid [destructuring statements](https://babeljs.io/learn-es2015/#ecmascript-2015-features-destructuring).
+  - `es5/no-default-parameters`: ~ Forbid [default parameters](https://babeljs.io/learn-es2015/#ecmascript-2015-features-default-rest-spread).
   - `es5/no-for-of`: Forbid [`for-of` statements](https://babeljs.io/learn-es2015/#ecmascript-2015-features-iterators-for-of).
   - `es5/no-object-super`: Forbid `super`/`super.foo()` calls.
-  - `es5/no-parameters`: ~
   - `es5/no-shorthand-properties`: Forbid [shorthand properties](https://babeljs.io/learn-es2015/#ecmascript-2015-features-enhanced-object-literals).
   - `es5/no-spread`: Forbid [...spread expressions](https://babeljs.io/learn-es2015/#ecmascript-2015-features-default-rest-spread).
   - `es5/no-template-literals`: Forbid [template strings](https://babeljs.io/learn-es2015/#ecmascript-2015-features-template-strings) usage.
