@@ -3,13 +3,18 @@
 module.exports = {
   meta: {
     docs: {
-      description: ''
+      description: 'Forbid template literals'
     },
     schema: []
   },
   create(context) {
     return {
-      
+      TemplateLiteral(node) {
+        context.report({
+          node,
+          message: 'Unexpected template-string expression.'
+        });
+      }
     };
   }
 };
