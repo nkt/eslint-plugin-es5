@@ -5,6 +5,16 @@ eslint-plugin-es5
 
 ESLint plugin for ES5 users.
 
+Why?
+----
+
+Sometimes someone doesn't want or can't to use Babel.
+Even if you support modern browsers or node.js, JS engines have bugs with ES2015
+like broken [block-scoping](http://stackoverflow.com/q/32665347)
+or want to forbid usage of `for-of`.
+
+If this concerns you, this plugin should help you.
+
 Installation
 ------------
 
