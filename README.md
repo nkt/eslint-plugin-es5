@@ -52,6 +52,7 @@ List of supported rules
   - `es5/no-destructuring`: Forbid [destructuring statements](https://babeljs.io/learn-es2015/#ecmascript-2015-features-destructuring).
   - `es5/exponentiation-operator`: Forbid exponentiation operator `a ** b` usage.
   - `es5/no-for-of`: Forbid [`for-of` statements](https://babeljs.io/learn-es2015/#ecmascript-2015-features-iterators-for-of).
+  - `es5/no-generators`: Forbid [generators](https://babeljs.io/learn-es2015/#ecmascript-2015-features-generators) usage.
   - `es5/no-modules`: Forbid ES2015 [modules](https://babeljs.io/learn-es2015/#ecmascript-2015-features-modules) usage.
   - `es5/no-object-super`: Forbid `super`/`super.foo()` calls.
   - `es5/no-shorthand-properties`: Forbid [shorthand properties](https://babeljs.io/learn-es2015/#ecmascript-2015-features-enhanced-object-literals).
