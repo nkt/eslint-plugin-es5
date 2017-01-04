@@ -29,7 +29,7 @@ module.exports = {
         'es5'
       ],
       rules: {
-        'es5/exponentiation-operator': 2,
+        'es5/no-exponentiation-operator': 2
       }
     }
   },
