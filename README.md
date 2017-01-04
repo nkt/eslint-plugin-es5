@@ -31,15 +31,15 @@ Also you can extend one of presets:
 {
   "extends": [
     "eslint:recommended",
-    "es5:no-es2015"
+    "plugin:es5/no-es2015"
   ]
 }
 ```
 
 Available presets:
 
-  - `es5:no-es2015`: Forbid ES2015 usage.
-  - `es5:no-es2016`: Forbid ES2016 usage.
+  - `plugin:es5/no-es2015`: Forbid ES2015 usage.
+  - `plugin:es5/no-es2016`: Forbid ES2016 usage.
 
 List of supported rules
 -----------------------
