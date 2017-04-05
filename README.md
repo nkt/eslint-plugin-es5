@@ -25,7 +25,18 @@ npm install --save-dev eslint-plugin-es5
 Usage
 -----
 
-Add into your `.eslintrc`:
+Add the plugin to your `.eslintrc`:
+
+```json
+{
+  "plugins": [
+    "es5"
+  ]
+}
+```
+
+And then any of the rules [listed below](#list-of-supported-rules) like this:
+
 ```json
 {
   "rules": {
@@ -33,8 +44,6 @@ Add into your `.eslintrc`:
   }
 }
 ```
-
-You can read more about other rules bellow.
 
 Also you can extend one of presets:
 ```json
