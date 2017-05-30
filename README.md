@@ -74,6 +74,7 @@ List of supported rules
   - `es5/no-generators`: Forbid [generators](https://babeljs.io/learn-es2015/#ecmascript-2015-features-generators) usage.
   - `es5/no-modules`: Forbid ES2015 [modules](https://babeljs.io/learn-es2015/#ecmascript-2015-features-modules) usage.
   - `es5/no-object-super`: Forbid `super`/`super.foo()` calls.
+  - `es5/no-rest-parameters`: Forbid [rest parameters](https://babeljs.io/learn-es2015/#ecmascript-2015-features-default-rest-spread).
   - `es5/no-shorthand-properties`: Forbid [shorthand properties](https://babeljs.io/learn-es2015/#ecmascript-2015-features-enhanced-object-literals).
   - `es5/no-spread`: Forbid [...spread expressions](https://babeljs.io/learn-es2015/#ecmascript-2015-features-default-rest-spread).
   - `es5/no-template-literals`: Forbid [template strings](https://babeljs.io/learn-es2015/#ecmascript-2015-features-template-strings) usage.
