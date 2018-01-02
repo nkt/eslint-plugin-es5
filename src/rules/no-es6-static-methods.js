@@ -10,7 +10,6 @@ module.exports = {
   create(context) {
     return {
       CallExpression(node) {
-        console.log(node.callee);
         if(node.callee && node.callee.property && node.callee.object) {
           const functionName = node.callee.object.name + '.' + node.callee.property.name;
           const es6StaticFunctions = [
