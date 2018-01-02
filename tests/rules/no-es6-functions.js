@@ -6,7 +6,7 @@ module.exports = {
     'test.otherTestMethod()'
   ],
   invalid: [
-    { code: 'test.find();', errors: [{ message: 'Unexpected ES6 function call.' }] },
-    { code: 'test.fill();', errors: [{ message: 'Unexpected ES6 function call.' }] }
+    { code: '[1, 2, 3].find(x => x == 3);', errors: [{ message: 'Unexpected ES6 function call.' }] },
+    { code: '[0, 0, 0].fill(7, 1);', errors: [{ message: 'Unexpected ES6 function call.' }] }
   ]
 };

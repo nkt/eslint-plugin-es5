@@ -10,13 +10,15 @@ module.exports = {
   create(context) {
     return {
       CallExpression(node) {
-        var functionName = node.callee.property.name;
-        var es6Functions = ['find', 'fill'];
-        if(es6Functions.indexOf(functionName) > -1) {
-          context.report({
-            node,
-            message: 'Unexpected ES6 function call.'
-          });
+        if(node.callee && node.callee.property) {
+          const functionName = node.callee.property.name;
+          const es6Functions = ['find', 'fill'];
+          if(es6Functions.indexOf(functionName) > -1) {
+            context.report({
+              node,
+              message: 'Unexpected ES6 function call.'
+            });
+          }
         }
       }
     };
