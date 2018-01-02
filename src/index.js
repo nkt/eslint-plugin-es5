@@ -42,6 +42,7 @@ module.exports = {
     'no-computed-properties': require('./rules/no-computed-properties'),
     'no-default-parameters': require('./rules/no-default-parameters'),
     'no-destructuring': require('./rules/no-destructuring'),
+    'no-es6-functions': require('./rules/no-es6-functions'),
     'no-exponentiation-operator': require('./rules/no-exponentiation-operator'),
     'no-for-of': require('./rules/no-for-of'),
     'no-generators': require('./rules/no-generators'),
