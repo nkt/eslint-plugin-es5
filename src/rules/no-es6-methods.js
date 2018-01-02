@@ -10,7 +10,8 @@ module.exports = {
   create(context) {
     return {
       CallExpression(node) {
-        if(node.callee && node.callee.property) {
+        const objectExceptions = ['_'];
+        if(node.callee && node.callee.property && objectExceptions.indexOf(node.callee.object.name) === -1) {
           const functionName = node.callee.property.name;
 
           const es6ArrayFunctions = [
