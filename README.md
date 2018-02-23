@@ -2,6 +2,7 @@ eslint-plugin-es5
 =================
 
 [![CircleCI](https://circleci.com/gh/nkt/eslint-plugin-es5.svg?style=shield)](https://circleci.com/gh/nkt/eslint-plugin-es5)
+[![Cult Of Martians](http://cultofmartians.com/assets/badges/badge.svg)](http://cultofmartians.com/tasks/eslint-es5.html)
 
 ESLint plugin for ES5 users.
 
