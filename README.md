@@ -78,7 +78,7 @@ List of supported rules
   - `es5/no-rest-parameters`: Forbid [rest parameters](https://babeljs.io/learn-es2015/#ecmascript-2015-features-default-rest-spread).
   - `es5/no-shorthand-properties`: Forbid [shorthand properties](https://babeljs.io/learn-es2015/#ecmascript-2015-features-enhanced-object-literals).
   - `es5/no-spread`: Forbid [...spread expressions](https://babeljs.io/learn-es2015/#ecmascript-2015-features-default-rest-spread).
-  - `es5/no-template-literals`: Forbid [template strings](https://babeljs.io/learn-es2015/#ecmascript-2015-features-template-strings) usage.
+  - `es5/no-template-literals`:wrench:: Forbid [template strings](https://babeljs.io/learn-es2015/#ecmascript-2015-features-template-strings) usage.
   - `es5/no-typeof-symbol`: Forbid `typeof foo === 'symbol'` [checks](https://babeljs.io/learn-es2015/#ecmascript-2015-features-symbols).
   - `es5/no-unicode-regex`: Forbid [Unicode support](https://babeljs.io/learn-es2015/#ecmascript-2015-features-unicode) in RegExp.
 
