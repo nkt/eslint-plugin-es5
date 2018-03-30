@@ -64,7 +64,7 @@ Available presets:
 List of supported rules
 -----------------------
 
-  - `es5/no-arrow-functions`: Forbid [arrow-functions](https://babeljs.io/learn-es2015/#ecmascript-2015-features-arrows-and-lexical-this).
+  - `es5/no-arrow-functions`:wrench:: Forbid [arrow-functions](https://babeljs.io/learn-es2015/#ecmascript-2015-features-arrows-and-lexical-this).
   - `es5/no-block-scoping`: Forbid `let` and `const` declarations. You can enable them using options: `"es5/no-block-scoping": ["error", { "let": true }]`
   - `es5/no-classes`: Forbid [ES2015 classes](https://babeljs.io/learn-es2015/#ecmascript-2015-features-classes).
   - `es5/no-computed-properties`: Forbid [computed properties](https://babeljs.io/learn-es2015/#ecmascript-2015-features-enhanced-object-literals).
