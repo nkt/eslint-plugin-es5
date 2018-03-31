@@ -8,6 +8,7 @@ module.exports = {
       ],
       rules: {
         'es5/no-arrow-functions': 2,
+        'es5/no-binary-and-octal-literals': 2,
         'es5/no-block-scoping': 2,
         'es5/no-classes': 2,
         'es5/no-computed-properties': 2,
@@ -38,6 +39,7 @@ module.exports = {
   },
   rules: {
     'no-arrow-functions': require('./rules/no-arrow-functions'),
+    'no-binary-and-octal-literals': require('./rules/no-binary-and-octal-literals'),
     'no-block-scoping': require('./rules/no-block-scoping'),
     'no-classes': require('./rules/no-classes'),
     'no-computed-properties': require('./rules/no-computed-properties'),
