@@ -65,11 +65,12 @@ List of supported rules
 -----------------------
 
   - `es5/no-arrow-functions`:wrench:: Forbid [arrow-functions](https://babeljs.io/learn-es2015/#ecmascript-2015-features-arrows-and-lexical-this).
+  - `es5/no-binary-and-octal-literals`:wrench:: Forbid [binary and octal literals](https://babeljs.io/learn-es2015/#binary-and-octal-literals).
   - `es5/no-block-scoping`: Forbid `let` and `const` declarations. You can enable them using options: `"es5/no-block-scoping": ["error", { "let": true }]`
   - `es5/no-classes`: Forbid [ES2015 classes](https://babeljs.io/learn-es2015/#ecmascript-2015-features-classes).
   - `es5/no-computed-properties`: Forbid [computed properties](https://babeljs.io/learn-es2015/#ecmascript-2015-features-enhanced-object-literals).
   - `es5/no-default-parameters`: Forbid [default parameters](https://babeljs.io/learn-es2015/#ecmascript-2015-features-default-rest-spread).
-  - `es5/no-destructuring`: Forbid [destructuring statements](https://babeljs.io/learn-es2015/#ecmascript-2015-features-destructuring).
+  - `es5/no-destructuring`:wrench:: Forbid [destructuring statements](https://babeljs.io/learn-es2015/#ecmascript-2015-features-destructuring).
   - `es5/no-exponentiation-operator`: Forbid exponentiation operator `a ** b` usage.
   - `es5/no-for-of`: Forbid [`for-of` statements](https://babeljs.io/learn-es2015/#ecmascript-2015-features-iterators-for-of).
   - `es5/no-generators`: Forbid [generators](https://babeljs.io/learn-es2015/#ecmascript-2015-features-generators) usage.
@@ -77,9 +78,10 @@ List of supported rules
   - `es5/no-object-super`: Forbid `super`/`super.foo()` calls.
   - `es5/no-rest-parameters`: Forbid [rest parameters](https://babeljs.io/learn-es2015/#ecmascript-2015-features-default-rest-spread).
   - `es5/no-shorthand-properties`: Forbid [shorthand properties](https://babeljs.io/learn-es2015/#ecmascript-2015-features-enhanced-object-literals).
-  - `es5/no-spread`: Forbid [...spread expressions](https://babeljs.io/learn-es2015/#ecmascript-2015-features-default-rest-spread).
-  - `es5/no-template-literals`: Forbid [template strings](https://babeljs.io/learn-es2015/#ecmascript-2015-features-template-strings) usage.
+  - `es5/no-spread`:wrench:: Forbid [...spread expressions](https://babeljs.io/learn-es2015/#ecmascript-2015-features-default-rest-spread).
+  - `es5/no-template-literals`:wrench:: Forbid [template strings](https://babeljs.io/learn-es2015/#ecmascript-2015-features-template-strings) usage.
   - `es5/no-typeof-symbol`: Forbid `typeof foo === 'symbol'` [checks](https://babeljs.io/learn-es2015/#ecmascript-2015-features-symbols).
+  - `es5/no-unicode-code-point-escape`:wrench:: Forbid [Unicode support](https://babeljs.io/learn-es2015/#unicode) in code point escape.
   - `es5/no-unicode-regex`: Forbid [Unicode support](https://babeljs.io/learn-es2015/#ecmascript-2015-features-unicode) in RegExp.
 
 License
