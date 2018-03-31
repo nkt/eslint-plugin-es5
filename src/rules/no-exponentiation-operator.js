@@ -16,6 +16,14 @@ module.exports = {
             message: 'Unexpected exponentiation operator.'
           });
         }
+      },
+      AssignmentExpression(node) {
+        if (node.operator === '**=') {
+          context.report({
+            node,
+            message: 'Unexpected exponentiation operator.'
+          });
+        }
       }
     };
   }
