@@ -25,6 +25,7 @@ module.exports = {
         'es5/no-spread': 2,
         'es5/no-template-literals': 2,
         'es5/no-typeof-symbol': 2,
+        'es5/no-unicode-code-point-escape': 2,
         'es5/no-unicode-regex': 2
       }
     },
@@ -57,6 +58,7 @@ module.exports = {
     'no-spread': require('./rules/no-spread'),
     'no-template-literals': require('./rules/no-template-literals'),
     'no-typeof-symbol': require('./rules/no-typeof-symbol'),
+    'no-unicode-code-point-escape': require('./rules/no-unicode-code-point-escape'),
     'no-unicode-regex': require('./rules/no-unicode-regex')
   }
 };
