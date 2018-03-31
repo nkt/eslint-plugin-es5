@@ -45,6 +45,25 @@ module.exports = {
     },
     {
       code: `
+var o = {
+  '\\u{20BB7}': '𠮷'
+}
+`,
+      output: `
+var o = {
+  '\\uD842\\uDFB7': '𠮷'
+}
+`,
+      errors: [
+        {
+          message: 'Unexpected Unicode code point escape. \\u{20BB7}',
+          column: 4,
+          line: 3,
+        }
+      ]
+    },
+    {
+      code: `
 a=\`\${a}\\u{D842}\\u{DFB7}\`
 b="\\u{20BB7}"
 c=/\\u{20BB7}/g
