@@ -28,7 +28,8 @@ module.exports = {
     const sourceCode = context.getSourceCode()
     function report(node, targets) {
       targets.forEach((target) => {
-        const {range, codePoint} = target
+        const range = target.range
+        const codePoint = target.codePoint
         context.report({
           node,
           loc: {
