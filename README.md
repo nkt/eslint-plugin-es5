@@ -64,6 +64,8 @@ Available presets:
 List of supported rules
 -----------------------
 
+  - `es5/no-es6-methods` Forbid ES2015 [methods](http://babeljs.io/learn-es2015/#math--number--string--object-apis) for `Array` and `String`
+  - `es5/no-es6-static-methods` Forbid ES2015 [static methods](http://babeljs.io/learn-es2015/#math--number--string--object-apis) for `Array`, `Math`, `Number`, and `Object`
   - `es5/no-arrow-functions`:wrench:: Forbid [arrow-functions](https://babeljs.io/learn-es2015/#ecmascript-2015-features-arrows-and-lexical-this).
   - `es5/no-binary-and-octal-literals`:wrench:: Forbid [binary and octal literals](https://babeljs.io/learn-es2015/#binary-and-octal-literals).
   - `es5/no-block-scoping`: Forbid `let` and `const` declarations. You can enable them using options: `"es5/no-block-scoping": ["error", { "let": true }]`
