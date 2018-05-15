@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = {
   meta: {
@@ -13,8 +13,8 @@ module.exports = {
         context.report({
           node,
           message: 'Unexpected parameter with default value.'
-        });
+        })
       }
-    };
+    }
   }
-};
+}

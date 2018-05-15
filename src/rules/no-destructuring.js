@@ -1,5 +1,4 @@
-'use strict';
-
+'use strict'
 
 function isSimpleAssignmentRight(node) {
   if (!node) {
@@ -42,7 +41,6 @@ function getMapping(node) {
       return false
     }
     return true
-
   }
   if (node.type === 'ObjectPattern') {
     if (!node.properties.length) {
@@ -50,9 +48,12 @@ function getMapping(node) {
     }
     const map = {}
     for (let p of node.properties) {
-      const name = (p.key.type === 'Identifier' && !p.computed) ? p.key.name
-        : p.key.type === 'Literal' ? `[${p.key.raw}]`
-        : null
+      const name =
+        p.key.type === 'Identifier' && !p.computed
+          ? p.key.name
+          : p.key.type === 'Literal'
+            ? `[${p.key.raw}]`
+            : null
       if (!name) {
         return null
       }
@@ -61,7 +62,7 @@ function getMapping(node) {
       }
     }
     return map
-  } else  if (node.type === 'ArrayPattern') {
+  } else if (node.type === 'ArrayPattern') {
     if (!node.elements.length) {
       return null
     }
@@ -136,23 +137,26 @@ module.exports = {
       context.report({
         node,
         message: 'Unexpected destructuring.',
-        fix: (fixer) => {
+        fix: fixer => {
           const parent = node.parent
           if (isSimpleDestructuringAssignment(parent)) {
-            return fixer.replaceText(parent, destructuringAssignmentToAssignments(parent, sourceCode))
+            return fixer.replaceText(
+              parent,
+              destructuringAssignmentToAssignments(parent, sourceCode)
+            )
           }
           return undefined
         }
-      });
+      })
     }
 
     return {
       ArrayPattern(node) {
-        report(node);
+        report(node)
       },
       ObjectPattern(node) {
-        report(node);
+        report(node)
       }
-    };
+    }
   }
-};
+}

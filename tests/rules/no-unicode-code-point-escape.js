@@ -1,14 +1,7 @@
-'use strict';
+'use strict'
 
 module.exports = {
-  valid: [
-    '"𠮷"',
-    '"\\uD842\\uDFB7"',
-    '`𠮷`',
-    '`\\uD842\\uDFB7`',
-    '/𠮷/g',
-    '/\\uD842\\uDFB7/g',
-  ],
+  valid: ['"𠮷"', '"\\uD842\\uDFB7"', '`𠮷`', '`\\uD842\\uDFB7`', '/𠮷/g', '/\\uD842\\uDFB7/g'],
   invalid: [
     {
       code: '"\\u{20BB7}"',
@@ -17,7 +10,7 @@ module.exports = {
         {
           message: 'Unexpected Unicode code point escape. \\u{20BB7}',
           column: 2,
-          line: 1,
+          line: 1
         }
       ]
     },
@@ -28,7 +21,7 @@ module.exports = {
         {
           message: 'Unexpected Unicode code point escape. \\u{20BB7}',
           column: 2,
-          line: 1,
+          line: 1
         }
       ]
     },
@@ -39,7 +32,7 @@ module.exports = {
         {
           message: 'Unexpected Unicode code point escape. \\u{20BB7}',
           column: 2,
-          line: 1,
+          line: 1
         }
       ]
     },
@@ -58,7 +51,7 @@ var o = {
         {
           message: 'Unexpected Unicode code point escape. \\u{20BB7}',
           column: 4,
-          line: 3,
+          line: 3
         }
       ]
     },
@@ -80,7 +73,7 @@ c=/\\uD842\\uDFB7/g
           column: 8,
           nodeType: 'TemplateElement',
           endLine: 2,
-          endColumn: 16,
+          endColumn: 16
         },
         {
           message: 'Unexpected Unicode code point escape. \\u{DFB7}',
@@ -88,7 +81,7 @@ c=/\\uD842\\uDFB7/g
           column: 16,
           nodeType: 'TemplateElement',
           endLine: 2,
-          endColumn: 24,
+          endColumn: 24
         },
         {
           message: 'Unexpected Unicode code point escape. \\u{20BB7}',
@@ -96,7 +89,7 @@ c=/\\uD842\\uDFB7/g
           column: 4,
           nodeType: 'Literal',
           endLine: 3,
-          endColumn: 13,
+          endColumn: 13
         },
         {
           message: 'Unexpected Unicode code point escape. \\u{20BB7}',
@@ -104,9 +97,9 @@ c=/\\uD842\\uDFB7/g
           column: 4,
           nodeType: 'Literal',
           endLine: 4,
-          endColumn: 13,
-        },
+          endColumn: 13
+        }
       ]
     }
   ]
-};
+}

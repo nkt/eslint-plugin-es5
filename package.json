@@ -23,7 +23,8 @@
     "url": "git+https://github.com/nkt/eslint-plugin-es5.git"
   },
   "scripts": {
-    "pretest": "eslint src/ tests/",
+    "lint": "eslint src/ tests/ --fix",
+    "pretest": "npm run lint",
     "test": "mocha ./tests/index.js",
     "preversion": "npm test",
     "postversion": "npm publish",
@@ -31,7 +32,10 @@
   },
   "devDependencies": {
     "eslint": "^4.14.0",
-    "mocha": "^4.1.0"
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "mocha": "^4.1.0",
+    "prettier": "^1.12.1"
   },
   "peerDependencies": {
     "eslint": ">= 3.0.0"

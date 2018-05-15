@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = {
   meta: {
@@ -13,17 +13,17 @@ module.exports = {
         context.report({
           node,
           message: 'Unexpected generator.'
-        });
+        })
       }
     }
 
     return {
       FunctionDeclaration(node) {
-        checkAndReport(node);
+        checkAndReport(node)
       },
       FunctionExpression(node) {
-        checkAndReport(node);
+        checkAndReport(node)
       }
-    };
+    }
   }
-};
+}

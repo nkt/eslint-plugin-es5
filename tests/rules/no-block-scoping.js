@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = {
   valid: [
@@ -7,7 +7,13 @@ module.exports = {
     { code: 'const foo = 1;', options: [{ const: true }] }
   ],
   invalid: [
-    { code: 'let foo = 1;', errors: [{ message: 'Unexpected let declaration.' }] },
-    { code: 'const foo = 1;', errors: [{ message: 'Unexpected const declaration.' }] }
+    {
+      code: 'let foo = 1;',
+      errors: [{ message: 'Unexpected let declaration.' }]
+    },
+    {
+      code: 'const foo = 1;',
+      errors: [{ message: 'Unexpected const declaration.' }]
+    }
   ]
-};
+}

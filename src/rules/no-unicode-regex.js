@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = {
   meta: {
@@ -12,17 +12,17 @@ module.exports = {
       context.report({
         node,
         message: 'Unexpected Unicode RegExp.'
-      });
+      })
     }
 
     return {
       Literal(node) {
         if (node.regex) {
           if (node.regex.flags.includes('u')) {
-            report(node);
+            report(node)
           }
         }
       }
-    };
+    }
   }
-};
+}

@@ -1,10 +1,7 @@
-'use strict';
+'use strict'
 
 module.exports = {
-  valid: [
-    'function foo() {}',
-    'var foo = function () {};'
-  ],
+  valid: ['function foo() {}', 'var foo = function () {};'],
   invalid: [
     {
       code: 'var foo = () => {};',
@@ -48,7 +45,8 @@ module.exports = {
     },
     {
       code: 'var foo = (param1 = defaultValue1, param2, paramN = defaultValueN) => { statements }',
-      output: 'var foo = function(param1 = defaultValue1, param2, paramN = defaultValueN){ statements }',
+      output:
+        'var foo = function(param1 = defaultValue1, param2, paramN = defaultValueN){ statements }',
       errors: [{ message: 'Unexpected arrow-function expression.' }]
     },
     {
@@ -57,4 +55,4 @@ module.exports = {
       errors: [{ message: 'Unexpected arrow-function expression.' }]
     }
   ]
-};
+}

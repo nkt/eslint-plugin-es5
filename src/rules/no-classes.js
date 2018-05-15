@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = {
   meta: {
@@ -12,16 +12,16 @@ module.exports = {
       context.report({
         node,
         message: 'Unexpected class declaration. Use function instead.'
-      });
+      })
     }
 
     return {
       ClassDeclaration(node) {
-        report(node);
+        report(node)
       },
       ClassExpression(node) {
-        report(node);
+        report(node)
       }
-    };
+    }
   }
-};
+}

@@ -1,17 +1,29 @@
-'use strict';
+'use strict'
 
 module.exports = {
-  valid: [
-    'var foo = [];',
-    'var foo = {}',
-    'function foo(bar) {}'
-  ],
+  valid: ['var foo = [];', 'var foo = {}', 'function foo(bar) {}'],
   invalid: [
-    { code: 'var [ foo ] = [];', output: null, errors: [{ message: 'Unexpected destructuring.' }] },
-    { code: 'var { foo } = {};', output: null, errors: [{ message: 'Unexpected destructuring.' }] },
-    { code: 'function foo([ bar ]) {}', output: null, errors: [{ message: 'Unexpected destructuring.' }] },
-    { code: 'function foo({ bar }) {}', output: null, errors: [{ message: 'Unexpected destructuring.' }] },
-    // ObjectPattern 
+    {
+      code: 'var [ foo ] = [];',
+      output: null,
+      errors: [{ message: 'Unexpected destructuring.' }]
+    },
+    {
+      code: 'var { foo } = {};',
+      output: null,
+      errors: [{ message: 'Unexpected destructuring.' }]
+    },
+    {
+      code: 'function foo([ bar ]) {}',
+      output: null,
+      errors: [{ message: 'Unexpected destructuring.' }]
+    },
+    {
+      code: 'function foo({ bar }) {}',
+      output: null,
+      errors: [{ message: 'Unexpected destructuring.' }]
+    },
+    // ObjectPattern
     {
       code: 'var { a } = foo;',
       output: 'var a=foo.a;',
@@ -40,7 +52,12 @@ module.exports = {
     {
       code: '({ a: {a1: aa1} } = foo, { b: {b1: bb1} } = bar);',
       output: '(aa1=foo.a.a1, bb1=bar.b.b1);',
-      errors: [{ message: 'Unexpected destructuring.' }, { message: 'Unexpected destructuring.' }, { message: 'Unexpected destructuring.' }, { message: 'Unexpected destructuring.' }]
+      errors: [
+        { message: 'Unexpected destructuring.' },
+        { message: 'Unexpected destructuring.' },
+        { message: 'Unexpected destructuring.' },
+        { message: 'Unexpected destructuring.' }
+      ]
     },
     {
       code: 'var { a, b } = { a:1, b:2 };',
@@ -133,6 +150,6 @@ module.exports = {
       code: 'var {a : [a1 = 1]} = foo;',
       output: null,
       errors: [{ message: 'Unexpected destructuring.' }, { message: 'Unexpected destructuring.' }]
-    },
+    }
   ]
-};
+}

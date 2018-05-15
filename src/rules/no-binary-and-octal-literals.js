@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = {
   meta: {
@@ -30,7 +30,7 @@ module.exports = {
             report(node, 'Octal')
           }
         }
-      },
-    };
+      }
+    }
   }
-};
+}

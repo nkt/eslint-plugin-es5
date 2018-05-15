@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = {
   meta: {
@@ -13,14 +13,14 @@ module.exports = {
         context.report({
           node,
           message: 'Unexpected rest parameter.'
-        });
+        })
       },
       ExperimentalRestProperty(node) {
         context.report({
           node,
           message: 'Unexpected rest parameter.'
-        });
+        })
       }
-    };
+    }
   }
-};
+}

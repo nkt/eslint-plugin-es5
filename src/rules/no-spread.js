@@ -1,7 +1,7 @@
-'use strict';
+'use strict'
 
 function arrayExpressionToArrayConcat(node, sourceCode) {
-  const argCodes = node.elements.map((e) => {
+  const argCodes = node.elements.map(e => {
     if (e.type === 'SpreadElement') {
       return sourceCode.getText(e.argument)
     }
@@ -37,8 +37,8 @@ module.exports = {
             // Doesn't autofix because it becomes an ugly code. (CallExpression | NewExpression)
             return undefined
           }
-        });
+        })
       }
-    };
+    }
   }
-};
+}

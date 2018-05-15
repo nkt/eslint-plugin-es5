@@ -1,11 +1,9 @@
-'use strict';
+'use strict'
 
 module.exports = {
   configs: {
     'no-es2015': {
-      plugins: [
-        'es5'
-      ],
+      plugins: ['es5'],
       rules: {
         'es5/no-arrow-functions': 2,
         'es5/no-binary-and-octal-literals': 2,
@@ -30,9 +28,7 @@ module.exports = {
       }
     },
     'no-es2016': {
-      plugins: [
-        'es5'
-      ],
+      plugins: ['es5'],
       rules: {
         'es5/no-exponentiation-operator': 2
       }
@@ -61,4 +57,4 @@ module.exports = {
     'no-unicode-code-point-escape': require('./rules/no-unicode-code-point-escape'),
     'no-unicode-regex': require('./rules/no-unicode-regex')
   }
-};
+}

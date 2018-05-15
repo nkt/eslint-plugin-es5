@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = {
   meta: {
@@ -14,7 +14,7 @@ module.exports = {
           context.report({
             node,
             message: 'Unexpected exponentiation operator.'
-          });
+          })
         }
       },
       AssignmentExpression(node) {
@@ -22,9 +22,9 @@ module.exports = {
           context.report({
             node,
             message: 'Unexpected exponentiation operator.'
-          });
+          })
         }
       }
-    };
+    }
   }
-};
+}

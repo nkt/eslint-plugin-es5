@@ -1,12 +1,7 @@
-'use strict';
+'use strict'
 
 module.exports = {
-  valid: [
-    'foo()',
-    '[]',
-    '[1].concat([2], [3]);',
-    'function foo (...args) {}'
-  ],
+  valid: ['foo()', '[]', '[1].concat([2], [3]);', 'function foo (...args) {}'],
   invalid: [
     {
       code: 'foo(...args)',
@@ -36,12 +31,18 @@ module.exports = {
     {
       code: '["a", ...b(), ...c]',
       output: '[].concat(["a"],b(),c)',
-      errors: [{ message: 'Unexpected spread expression.' }, { message: 'Unexpected spread expression.' }]
+      errors: [
+        { message: 'Unexpected spread expression.' },
+        { message: 'Unexpected spread expression.' }
+      ]
     },
     {
       code: '[...[...args]]',
       output: '[].concat([...args])',
-      errors: [{ message: 'Unexpected spread expression.' }, { message: 'Unexpected spread expression.' }]
+      errors: [
+        { message: 'Unexpected spread expression.' },
+        { message: 'Unexpected spread expression.' }
+      ]
     }
   ]
-};
+}

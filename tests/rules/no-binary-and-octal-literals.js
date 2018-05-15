@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = {
   valid: [
@@ -6,7 +6,7 @@ module.exports = {
 var FLT_SIGNBIT  = 2147483648;
 var FLT_EXPONENT = 2139095040;
 var FLT_MANTISSA = 8388607;
-    `,
+    `
   ],
   invalid: [
     {
@@ -26,21 +26,21 @@ var FLT_MANTISSA = 8388607; // 8388607
           line: 2,
           column: 20,
           endLine: 2,
-          endColumn: 54,
+          endColumn: 54
         },
         {
           message: 'Unexpected Binary literal.',
           line: 3,
           column: 20,
           endLine: 3,
-          endColumn: 54,
+          endColumn: 54
         },
         {
           message: 'Unexpected Binary literal.',
           line: 4,
           column: 20,
           endLine: 4,
-          endColumn: 54,
+          endColumn: 54
         }
       ]
     },
@@ -59,16 +59,16 @@ var m = 420; // 420
           line: 2,
           column: 9,
           endLine: 2,
-          endColumn: 14,
+          endColumn: 14
         },
         {
           message: 'Unexpected Octal literal.',
           line: 3,
           column: 9,
           endLine: 3,
-          endColumn: 14,
-        } 
+          endColumn: 14
+        }
       ]
-    },
+    }
   ]
-};
+}

@@ -1,10 +1,7 @@
-'use strict';
+'use strict'
 
 module.exports = {
-  valid: [
-    '\'test\'',
-    '"test"'
-  ],
+  valid: ["'test'", '"test"'],
   invalid: [
     {
       code: '`test`',
@@ -37,29 +34,29 @@ module.exports = {
       errors: [{ message: 'Unexpected template-string expression.' }]
     },
     {
-      code: '`\'"\n`',// to escape test
+      code: '`\'"\n`', // to escape test
       output: `'\\'"\\n'`,
       errors: [{ message: 'Unexpected template-string expression.' }]
     },
     {
-      code: '`\\`\\${a}`',// escape code test
+      code: '`\\`\\${a}`', // escape code test
       output: "'`${a}'",
       errors: [{ message: 'Unexpected template-string expression.' }]
     },
     {
-      code: '``',// empty
+      code: '``', // empty
       output: `''`,
       errors: [{ message: 'Unexpected template-string expression.' }]
     },
     {
-      code: '`${1}${2}`',// expressions only
+      code: '`${1}${2}`', // expressions only
       output: `''+1+2`,
       errors: [{ message: 'Unexpected template-string expression.' }]
     },
     {
-      code: 'tag`Hello ${ a + b } world ${ a * b}`',// tagged
+      code: 'tag`Hello ${ a + b } world ${ a * b}`', // tagged
       output: `tag(['Hello ',' world ',''],a + b,a * b)`,
       errors: [{ message: 'Unexpected template-string expression.' }]
     }
   ]
-};
+}

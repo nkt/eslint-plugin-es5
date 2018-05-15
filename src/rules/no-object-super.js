@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = {
   meta: {
@@ -11,17 +11,17 @@ module.exports = {
     function isSuperCall(node) {
       if (node.callee) {
         if (node.callee.type === 'Super') {
-          return true;
+          return true
         }
 
         if (node.callee.object && node.callee.object.type) {
           if (node.callee.object.type === 'Super') {
-            return true;
+            return true
           }
         }
       }
 
-      return false;
+      return false
     }
 
     return {
@@ -30,9 +30,9 @@ module.exports = {
           context.report({
             node,
             message: 'Unexpected super() call.'
-          });
+          })
         }
       }
-    };
+    }
   }
-};
+}

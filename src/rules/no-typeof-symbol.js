@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = {
   meta: {
@@ -9,28 +9,28 @@ module.exports = {
   },
   create(context) {
     function isTypeOf(node) {
-      return node.type === 'UnaryExpression' && node.operator === 'typeof';
+      return node.type === 'UnaryExpression' && node.operator === 'typeof'
     }
 
     function isSymbolLiteral(node) {
       switch (node.type) {
         case 'Literal':
-          return node.value === 'symbol';
+          return node.value === 'symbol'
 
         case 'TemplateLiteral':
-          return node.quasis.length === 1 && node.quasis[0].value.raw === 'symbol';
+          return node.quasis.length === 1 && node.quasis[0].value.raw === 'symbol'
 
         default:
-          return false;
+          return false
       }
     }
 
     function isTypeOfSymbolExpression(node) {
       if (isTypeOf(node.left) && isSymbolLiteral(node.right)) {
-        return true;
+        return true
       }
 
-      return isTypeOf(node.right) && isSymbolLiteral(node.left);
+      return isTypeOf(node.right) && isSymbolLiteral(node.left)
     }
 
     return {
@@ -39,9 +39,9 @@ module.exports = {
           context.report({
             node,
             message: 'Unexpected typeof Symbol detection.'
-          });
+          })
         }
       }
-    };
+    }
   }
-};
+}

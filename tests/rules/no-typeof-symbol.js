@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = {
   valid: [
@@ -8,11 +8,29 @@ module.exports = {
     '`${s}ymbol` === typeof foo'
   ],
   invalid: [
-    { code: 'typeof foo === \'symbol\'', errors: [{ message: 'Unexpected typeof Symbol detection.' }] },
-    { code: 'typeof foo == \'symbol\'', errors: [{ message: 'Unexpected typeof Symbol detection.' }] },
-    { code: '\'symbol\' === typeof foo', errors: [{ message: 'Unexpected typeof Symbol detection.' }] },
-    { code: '\'symbol\' == typeof foo', errors: [{ message: 'Unexpected typeof Symbol detection.' }] },
-    { code: 'typeof foo === `symbol`', errors: [{ message: 'Unexpected typeof Symbol detection.' }] },
-    { code: '`symbol` === typeof foo', errors: [{ message: 'Unexpected typeof Symbol detection.' }] },
+    {
+      code: "typeof foo === 'symbol'",
+      errors: [{ message: 'Unexpected typeof Symbol detection.' }]
+    },
+    {
+      code: "typeof foo == 'symbol'",
+      errors: [{ message: 'Unexpected typeof Symbol detection.' }]
+    },
+    {
+      code: "'symbol' === typeof foo",
+      errors: [{ message: 'Unexpected typeof Symbol detection.' }]
+    },
+    {
+      code: "'symbol' == typeof foo",
+      errors: [{ message: 'Unexpected typeof Symbol detection.' }]
+    },
+    {
+      code: 'typeof foo === `symbol`',
+      errors: [{ message: 'Unexpected typeof Symbol detection.' }]
+    },
+    {
+      code: '`symbol` === typeof foo',
+      errors: [{ message: 'Unexpected typeof Symbol detection.' }]
+    }
   ]
-};
+}
