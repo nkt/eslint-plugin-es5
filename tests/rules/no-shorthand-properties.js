@@ -6,7 +6,15 @@ module.exports = {
     'var foo = { bar: function () {} };'
   ],
   invalid: [
-    { code: 'var foo = { bar };', errors: [{ message: 'Unexpected object shorthand property.' }] },
-    { code: 'var foo = { bar() {} };', errors: [{ message: 'Unexpected object shorthand property.' }] }
+    {
+      code: 'var foo = { bar };',
+      errors: [{ message: 'Unexpected object shorthand property.' }],
+      output: 'var foo = { bar: bar };'
+    },
+    {
+      code: 'var foo = { bar() {} };',
+      errors: [{ message: 'Unexpected object shorthand property.' }],
+      output: 'var foo = { bar: function() {} };'
+    }
   ]
 };
