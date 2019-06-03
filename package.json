@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "eslint": "^4.14.0",
-    "mocha": "^4.1.0"
+    "mocha": "^5.1.1"
   },
   "peerDependencies": {
     "eslint": ">= 3.0.0"
