@@ -14,10 +14,10 @@ module.exports = {
     }]
   },
   create(context) {
+    const options = Object.assign({ let: false, const: false }, context.options[0]);
+
     return {
       VariableDeclaration(node) {
-        const options = Object.assign({ let: false, const: false }, context.options[0]);
-
         if (node.kind === 'var' || options[node.kind]) {
           return;
         }
