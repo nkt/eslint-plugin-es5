@@ -27,8 +27,24 @@ function isLodash(callee) {
   return false;
 }
 
+function isJQuery(callee) {
+  const original = getOriginalCallee(callee);
+
+  if(original.type === 'Identifier' && (original.name === '$' || original.name === 'jQuery')) {
+    return true;
+  }
+
+  // Support the popular convention of prefixing a variable with $ to show that
+  // it refers to a jQuery object: https://stackoverflow.com/a/553734
+  if(original.type === 'MemberExpression' && original.object.type === 'Identifier' && original.object.name[0] === '$') {
+    return true;
+  }
+
+  return false;
+}
+
 function isPermitted(callee) {
-  return isLodash(callee);
+  return isLodash(callee) || isJQuery(callee);
 }
 
 module.exports = {
