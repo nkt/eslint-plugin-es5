@@ -9,7 +9,7 @@ ESLint plugin for ES5 users.
 Why?
 ----
 
-Sometimes someone doesn't want or can't to use Babel.
+Sometimes someone doesn't want to or can't use Babel.
 Even if you support modern browsers or node.js, JS engines have bugs
 like broken [block-scoping](http://stackoverflow.com/q/32665347).
 Maybe you only want to forbid usage of `for-of` in your project.
