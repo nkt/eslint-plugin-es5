@@ -31,8 +31,14 @@ module.exports = {
       'Math.sign',
       'Number.isNaN',
       'Number.isFinite',
+      'Number.isInteger',
       'Number.isSafeInteger',
+      'Number.parseFloat',
+      'Number.parseInt',
       'Object.assign',
+      'Object.is',
+      'Object.getOwnPropertySymbols',
+      'Object.setPrototypeOf',
     ];
     const staticFunctions = es6StaticFunctions.filter((name) => !exceptMethods.has(name));
 
